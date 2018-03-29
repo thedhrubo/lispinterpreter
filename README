@@ -1,0 +1,83 @@
+Author Dhrubo
+
+This is course project. The target of the project is to develop the lisp interpreter. The requirements are given in details in the final_project.pdf.
+
+To build the project you have to do the following things :
+
+1. make   [ Execute the command and it will generate the corresponding the class files in the bin folder. And also calls the class files to load the program. 
+			Now you are good to go to execute the command ]
+
+			
+			
+if somehow the program crashes for giving wrong input, please run 'make' again to execute the lisp command again.
+
+2. Before executing make, please execute 'make clean' through which all the unnecessary or class files will be deleted. 
+			
+			
+The following statements are working belows: 
+
+1. (define r 10)  
+2. (r)
+3. (+ 2 3)
+output: prompt> 5
+(- 3 2)
+output: prompt> 1
+(* 2 3)
+output: prompt> 6
+(/ 6 2)
+output: prompt> 3
+
+4. (+ (+ 2 3) 5)
+output: prompt> 10
+(- (- 2 3) 5) 
+(* (* 2 3) 5)
+
+5. (define a 5)
+output: prompt> 5
+(define b 10)
+output: prompt> 10
+(+ a b)
+output: prompt> 15
+(- b a)
+output: prompt> 10
+(* b a)
+output: prompt> 50
+(/ b a)
+output: prompt> 2
+
+6. (define x 2)
+output: prompt> 2
+(define y 4)
+output: prompt> 4
+(define z 8)
+output: prompt> 8
+(+ (+ x y) z)
+output: prompt> 14
+(* (* x y) z)
+output: prompt> 64
+(- (- x y) z)
+
+7. (define r 10)
+output: prompt> 10
+(set! r 5)
+output: prompt> 5
+(r)
+output: prompt> 5
+(set! r (* 2 2))
+output: prompt> 4
+(r)
+output: prompt> 4
+(set! r (* r r))
+output: prompt> 16
+(r)
+output: prompt> 16
+(set! r 2)
+output: prompt> 2
+
+8. (sqrt 4)
+(sin 90)
+(cos 90)
+(tan 90)
+
+9. (sqrt (* 2 8))
+
